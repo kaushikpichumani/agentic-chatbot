@@ -19,8 +19,6 @@ This repository intentionally keeps complexity low so developers can **clearly u
 
 ## 🗂️ Project Structure
 
-## 🗂️ Project Structure
-
 ```
 BasicChatbot/
 ├── app.py
