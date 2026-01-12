@@ -19,32 +19,33 @@ This repository intentionally keeps complexity low so developers can **clearly u
 
 ## 🗂️ Project Structure
 
+## 🗂️ Project Structure
+
+```
 BasicChatbot/
-│
-├── app.py                     # Entry point
-├── requirements.txt           # Python dependencies
+├── app.py
+├── requirements.txt
 ├── .gitignore
 │
 ├── src/
 │   └── langgraphagenticai/
 │       ├── graph/
-│       │   └── graph_builder.py     # LangGraph definition (nodes & edges)
+│       │   └── graph_builder.py
 │       │
 │       ├── nodes/
-│       │   └── basic_chatbot_node.py # Chatbot node logic
+│       │   └── basic_chatbot_node.py
 │       │
 │       ├── state/
-│       │   └── state.py              # Graph state definition
+│       │   └── state.py
 │       │
 │       ├── LLMS/
-│       │   └── groqllm.py             # Groq LLM wrapper
+│       │   └── groqllm.py
 │       │
 │       └── ui/
 │           ├── uiconfigfile.ini
 │           └── streamlitui/
-│               ├── loadui.py          # UI loader
-│               └── display_result.py  # Chat output renderer
-
+│               ├── loadui.py
+│               └── display_result.py
 
 ## ⚙️ Installation
 
