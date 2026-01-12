@@ -21,33 +21,30 @@ This repository intentionally keeps complexity low so developers can **clearly u
 
 BasicChatbot/
 │
-├── app.py # Application entry point
-├── requirements.txt # Python dependencies
+├── app.py                     # Entry point
+├── requirements.txt           # Python dependencies
 ├── .gitignore
 │
 ├── src/
-│ └── langgraphagenticai/
-│ ├── graph/
-│ │ └── graph_builder.py # LangGraph setup (nodes & edges)
-│ │
-│ ├── nodes/
-│ │ └── basic_chatbot_node.py # Core chatbot logic
-│ │
-│ ├── state/
-│ │ └── state.py # State definition for LangGraph
-│ │
-│ ├── LLMS/
-│ │ └── groqllm.py # Groq LLM initialization
-│ │
-│ └── ui/
-│ ├── uiconfigfile.ini
-│ └── streamlitui/
-│ ├── loadui.py # UI loader
-│ └── display_result.py # Chat response renderer
+│   └── langgraphagenticai/
+│       ├── graph/
+│       │   └── graph_builder.py     # LangGraph definition (nodes & edges)
+│       │
+│       ├── nodes/
+│       │   └── basic_chatbot_node.py # Chatbot node logic
+│       │
+│       ├── state/
+│       │   └── state.py              # Graph state definition
+│       │
+│       ├── LLMS/
+│       │   └── groqllm.py             # Groq LLM wrapper
+│       │
+│       └── ui/
+│           ├── uiconfigfile.ini
+│           └── streamlitui/
+│               ├── loadui.py          # UI loader
+│               └── display_result.py  # Chat output renderer
 
-
-
----
 
 ## ⚙️ Installation
 
